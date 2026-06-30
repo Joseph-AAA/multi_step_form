@@ -73,7 +73,7 @@ function Step4({setSubmitted, plan, planData, formData, addOnData, setStep} :Ste
             {/********************************* Plan Cards *************************************************/}
            <div className="w-full mt-5 bg-[hsl(231,100%,99%)]  rounded-xl">
                
-                <div className="flex justify-between p-5 md:p-10 ">
+                <div className="flex justify-between p-10 md:p-10 ">
                     <div>
                         <h1 className="text-xl font-bold"> {planData.name} </h1>
                         <button
@@ -87,7 +87,7 @@ function Step4({setSubmitted, plan, planData, formData, addOnData, setStep} :Ste
                      <span className="w-10/12 relative border-t-[hsl(229,24%,87%)] border-transparent border block"></span>
                 </div>
 
-                <div className="grid p-5 md:p-10">
+                <div className="grid p-10 md:p-10">
                    {
                         addOnData.map((item : AddOn) => (
                             <div key={item.id} className="flex justify-between pt-3">
@@ -107,7 +107,7 @@ function Step4({setSubmitted, plan, planData, formData, addOnData, setStep} :Ste
 
 
            </div>
-                <div className="flex justify-between p-5 md:p-10 ">
+                <div className="flex justify-between p-10 md:p-10 ">
                                     <p>Total (per {plan === "Yearly" ? "year" : "month"})</p>
                                  
                                  <span className="text-xl text-[hsl(243,100%,62%)] font-bold">

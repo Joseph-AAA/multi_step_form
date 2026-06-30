@@ -80,7 +80,7 @@ const [addOnData, setAddOnData] = useState<AddOn[]>([]); /* TO store Data for St
                             bg-cover w-full
                             
                             bg-amber-500
-                            h-100
+                            h-105
                             lg:min-h-170
                         
                             bg-no-repeat
@@ -136,7 +136,7 @@ const [addOnData, setAddOnData] = useState<AddOn[]>([]); /* TO store Data for St
                   </div>
 {/***********************************************Content************************************/}
 
-                <div className="flex ml-5 mr-5 lg:ml-0 lg:mr-0 -mt-33 lg:mt-0 //bg-amber-100 w-full lg:w-[70%] min-h-100 lg:min-h-150 items-center justify-center">
+                <div className="flex pb:20 md:pb-0 ml-5 mr-5 lg:ml-0 lg:mr-0 -mt-30 lg:mt-0 //bg-amber-100 w-full lg:w-[70%] min-h-100 lg:min-h-150 items-center justify-center">
                   <div className="flex lg:pt-0 pt-5 w-[80%] rounded-2xl lg:w-[85%]  -mt-20 lg:mt-0  bg-white min-h-100 lg:min-h-150 border-0  justify-center">
                     {step === 1 && <Step1 submitted={submitted} setSubmitted={setSubmitted} formData ={formData} setFormData={setFormData} setStep={setStep} />}
                     {step === 2 && <Step2 plan={plan} setPlan={setPlan} planData ={planData} setPlanData={setPlanData}

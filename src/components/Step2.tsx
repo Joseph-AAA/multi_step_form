@@ -59,7 +59,7 @@ function Step2({ plan , setPlan, planData, setPlanData, setStep } : Step2Props){
             </div>   
 
 {/************************************************ Plan Cards *************************************************/}
-           <div className="lg:flex mt-5 mb-10 lg:gap-2 justify-around ">
+           <div className="lg:flex mt-5 mb:5 lg:mb-10 lg:gap-2 justify-around ">
                 {
                     plans.map((myPlan)=>{
                         return (
@@ -93,7 +93,7 @@ function Step2({ plan , setPlan, planData, setPlanData, setStep } : Step2Props){
 
 {/************************************************** Switch Button *************************************************/}
 
-            <div className="relative w-full pb-10">
+            <div className="relative w-full pb-5">
                  <div className="flex items-center  justify-center w-full  text-white font-bold 
                  bg-[hsl(218,100%,97%)] pt-3 pb-3 pl-5 pr-5 
                  rounded-xl right-0 hover:cursor-pointer bottom-0 gap-10">

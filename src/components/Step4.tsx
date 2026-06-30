@@ -107,7 +107,7 @@ function Step4({setSubmitted, plan, planData, formData, addOnData, setStep} :Ste
 
 
            </div>
-                <div className="flex justify-between p-10 ">
+                <div className="flex justify-between p-5 md:p-10 ">
                                     <p>Total (per {plan === "Yearly" ? "year" : "month"})</p>
                                  
                                  <span className="text-xl text-[hsl(243,100%,62%)] font-bold">

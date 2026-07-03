@@ -5,25 +5,27 @@ const fruits = [
     "Apple",
     "Orange",
     "Banana",
-    "Grape",
-    "Potota",
-    "Apple2",
-    "Banana2"
+    
 ];
 
-for (let i=0; i<fruits.length; i++){
-    console.log(fruits);
-}
-
-for (const fruit of fruits){
-    console.log(fruit);
-}
 const user = {
-    name : "John",
-    age: 20,
-    city : "Yangon"
+    name : "mgmg",
+    age : 13,
+    address : {
+        city : "KL",
+        Town : "Subang"
+    }
 }
-for (const person in user){
-   
-    console.log( person + " : "+user[person] )
+ 
+
+function shop([item1,item2,item3]) {
+    console.log(item1)
 }
+shop(fruits);
+
+
+
+function callAddress({name, age, }) {
+    console.log("his name " , item1 )
+}
+callAddress(user)

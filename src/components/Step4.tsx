@@ -77,7 +77,7 @@ function Step4({setSubmitted, plan, planData, formData, addOnData, setStep} :Ste
                     <div>
                         <h1 className="text-xl font-bold"> {planData.name} </h1>
                         <button
-                            type="button">
+                            type="button" onClick={()=>setStep(1)} className=" hover:cursor-pointer hover:text-blue-700">
                         Change
                         </button>
                     </div>

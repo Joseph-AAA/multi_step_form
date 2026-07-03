@@ -75,9 +75,9 @@ function Step4({setSubmitted, plan, planData, formData, addOnData, setStep} :Ste
                
                 <div className="flex justify-between p-5 lg:p-10 ">
                     <div>
-                        <h1 className="text-xl font-bold"> {planData.name} </h1>
+                        <h1 className="text-xl font-bold "> {planData.name} </h1>
                         <button
-                            type="button" onClick={()=>setStep(1)} className=" hover:cursor-pointer hover:text-blue-700">
+                            type="button" onClick={()=>setStep(1)} className="text-[hsl(231,11%,63%)]   underline hover:cursor-pointer hover:text-blue-700">
                         Change
                         </button>
                     </div>

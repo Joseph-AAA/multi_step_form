@@ -5,16 +5,14 @@ type Step1Props = {
     name: string;
     email: string;
     phone: string;
-  },submitted : boolean;setSubmitted :React.Dispatch<React.SetStateAction<boolean>>;
-
-  setFormData: React.Dispatch<
-    React.SetStateAction<{
-      name: string;
-      email: string;
-      phone: string;
-    }>
-  >;
-  setStep: React.Dispatch<React.SetStateAction<number>>;
+  },submitted : boolean;
+    setSubmitted : React.Dispatch<React.SetStateAction<boolean>>;
+    setFormData: React.Dispatch<React.SetStateAction<{
+                                                name: string;
+                                                email: string;
+                                                phone: string;
+                                            }> >;
+    setStep: React.Dispatch<React.SetStateAction<number>>;
 };
 function Step1({submitted, setSubmitted , formData,setFormData,setStep} : Step1Props ){
 
@@ -23,10 +21,8 @@ function Step1({submitted, setSubmitted , formData,setFormData,setStep} : Step1P
                     ...formData,
                     [e.target.name ] : e.target.value.replace(/^\s+/, "")
             });
-            
         }
 
-    console.log(formData)
 
     const [touched, setTouched] = useState({
           name: false,

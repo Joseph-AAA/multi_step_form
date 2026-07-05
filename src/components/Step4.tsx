@@ -61,7 +61,7 @@ function Step4({setSubmitted, plan, planData, formData, addOnData, setStep} :Ste
          <>
     <div className="lg:relative flex w-[90%] lg:w-full flex-col  
                         gap-3.5 border-2 rounded-3xl 
-                        border-transparent ">
+                        border-transparent">
 
 
               {/********************************* Header *************************************************/}                

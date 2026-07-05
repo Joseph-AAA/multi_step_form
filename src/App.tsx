@@ -25,13 +25,10 @@ function App() {
   
 const [step,setStep] = useState<number>(1);
 
-const [plan, setPlan] = useState("!Yearly");  /* for Step two Montly and Yearly */
+const [submitted, setSubmitted] = useState(false); /*for step 1 error message Step1*/
+const [plan, setPlan] = useState("!Yearly");  /* for Step two Montly and Yearly Step2*/
 
-const [submitted, setSubmitted] = useState(false); /*for step 1 error message*/
-
-// const [planData, setPlanData] = useState<Plan | null>(null); /* TO store Data for Step 2*/
-
-const [planData, setPlanData] = useState<Plan>({
+const [planData, setPlanData] = useState<Plan>({           /*To Set Default value step 2*/
   id: 1,
   name: "Arcade",
   monthly: 9,
@@ -74,8 +71,6 @@ const [addOnData, setAddOnData] = useState<AddOn[]>([]); /* TO store Data for St
                             lg:w-[35%] 
                             lg:bg-[url('./assets/images/bg-sidebar-desktop.svg')]
                             lg:rounded-2xl lg:m-5
-                            
-
                             bg-[url('./assets/images/bg-sidebar-mobile.svg')]
                             bg-cover w-full
                             
@@ -93,8 +88,6 @@ const [addOnData, setAddOnData] = useState<AddOn[]>([]); /* TO store Data for St
                                             return (
                                                     <div className="flex  lg:w-full mt-25 justify-center  lg:mt-7 lg:gap-5" key={sideStep.id}>
                                                         <div onClick={()=>setStep(sideStep.id)} 
-                                                          
-
                                                         className={`flex  items-center justify-center text-sm
                                                                         lg:text-2xl w-10 h-10 
                                                                         rounded-full border-2

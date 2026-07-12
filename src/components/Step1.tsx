@@ -10,7 +10,7 @@ type Step1Props = {
     setFormData: React.Dispatch<React.SetStateAction<{
                                                 name: string;
                                                 email: string;
-                                                phone: string;
+                                        phone: string;
                                             }> >;
     setStep: React.Dispatch<React.SetStateAction<number>>;
 };
@@ -23,14 +23,11 @@ function Step1({submitted, setSubmitted , formData,setFormData,setStep} : Step1P
             });
         }
 
-
-    const [touched, setTouched] = useState({
-          name: false,
+    const [touched, setTouched] = useState({     
+          name: false,        /*In input name = "name", name="email", name="phone" */
           email: false,
           phone: false,
         });
-
- 
 
     function handleBlur(e: React.FocusEvent<HTMLInputElement>) {
                   setTouched({
@@ -42,9 +39,6 @@ function Step1({submitted, setSubmitted , formData,setFormData,setStep} : Step1P
     const nameValid = /^[A-Za-z\s]+$/.test(formData.name.trim());
     const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim());
     const phoneValid = /^\+?[0-9\s-]{7,20}$/.test(formData.phone.trim());
-
-
-  
 
       function handleNext() {
           setSubmitted(true);
@@ -100,7 +94,7 @@ function Step1({submitted, setSubmitted , formData,setFormData,setStep} : Step1P
                         placeholder="e.g. Stephen King" 
                         className=" px-4 w-full h-12 border-[hsl(229,24%,87%)]
                                  border-2 rounded-xl" 
-                       />
+                  />
                   </div>
 
 {/************************************************ Email  *************************************************/}                

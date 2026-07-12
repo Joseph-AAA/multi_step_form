@@ -1,25 +1,12 @@
 
+import type { AddOn } from "../App";
+import type { Plan } from "../App";
 
-   type AddOn = {
-                    id: number;
-                    title: string;
-                    description: string;
-                    monthly: number;
-                    yearly: number;
-                };
-
-export type Plan = {
-                    id: number;
-                    name: string;
-                    monthly: number;
-                    yearly: number;
-                    icon: string;
-                };
-type Formdata = {
-    name: string;
-    email: string;
-    phone: string;
-  };
+    type Formdata = {
+            name: string;
+            email: string;
+            phone: string;
+        };
    type Step4Props = {
                         setStep: React.Dispatch<React.SetStateAction<number>>;
                         planData : Plan;
@@ -54,9 +41,7 @@ function Step4({setSubmitted, plan, planData, formData, addOnData, setStep} :Ste
 
           setStep(5);
     }
-
-
-          
+ 
  return (
          <>
     <div className="lg:relative flex w-[90%] lg:w-full flex-col  

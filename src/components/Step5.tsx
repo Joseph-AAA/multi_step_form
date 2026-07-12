@@ -14,7 +14,7 @@ function Step5(){
                                         <h2 className="text-[hsl(213,96%,18%)] text-2xl font-bold">
                                             Thank you!
                                         </h2>
-                                        <p className="text-center text-xl w-full text-[hsl(231,11%,63%)] break-words">
+                                        <p className="text-center text-xl w-full text-[hsl(231,11%,63%)] word-break-words">
                                             Thanks for confirming your subscription! We hope you have fun using our platform. 
                                             If you ever need support, please feel free to email us at support@loremgaming.com.
                                         </p>

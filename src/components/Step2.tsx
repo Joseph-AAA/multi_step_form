@@ -10,7 +10,7 @@ type Step2Props = {
   plan: string;
   setPlan: React.Dispatch<React.SetStateAction<string>>;
   setStep: React.Dispatch<React.SetStateAction<number>>;
-  planData: Plan | null;
+  planData: Plan ;
   setPlanData: React.Dispatch<React.SetStateAction<Plan>>;
 };
 
@@ -20,13 +20,11 @@ function Step2({ plan , setPlan, planData, setPlanData, setStep } : Step2Props){
      const [submitted,setSubmitted] = useState(false);
     function handleNext() {
          setSubmitted(true);
-        if (!planData) {
-          
+        if (!planData) {        
             return;
-        }
-
-  setStep(3);
-}
+            }
+    setStep(3);
+    }
 
     const plans = [
         {id:1, name:"Arcade",monthly :9, yearly : 90, icon :arcadeIcon },

@@ -19,7 +19,7 @@ type Step3Props = {
 function Step3({addOnData, setAddOnData, plan, setStep}:Step3Props){
 
 
-console.log(`${'Addon Data' + addOnData.map((item)=>item.title)}`)
+// console.log(`${'Addon Data' + addOnData.map((item)=>item.title)}`)
 
 
 //  const[submitted, setSubmitted] = useState(false);
@@ -51,11 +51,7 @@ console.log(`${'Addon Data' + addOnData.map((item)=>item.title)}`)
                 <div className="">
                   <div className="flex items-center justify-between">
                         <h1 className="mb-2 font-bold text-3xl">Pick add-ons</h1>
-                     {/* {submitted && addOnData.length === 0 && (
-                            <p className=" text-red-600 text font-bold">
-                                Please select at least one add-on.
-                            </p>
-                        )} */}
+                    
                   </div>
                            <p className="text-[hsl(231,11%,63%)]">Add-ons help enhance your gaming experience</p>
                 </div>
@@ -102,7 +98,7 @@ console.log(`${'Addon Data' + addOnData.map((item)=>item.title)}`)
                                                 </p>
 
                                             </div>
-                                            {/* <p className={`${move==="Yearly" ? "block" : "hidden"} ml-4  font-medium`}>2 months free</p> */}
+                                          
                                         </div>
                                         
                                 

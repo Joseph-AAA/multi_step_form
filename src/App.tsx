@@ -7,20 +7,21 @@ import Step3  from "./components/Step3";
 import Step4  from "./components/Step4";
 import Step5  from "./components/Step5";
 
-export type Plan = {
-  id: number;
-  name: string;
-  monthly: number;
-  yearly: number;
-  icon: string;
-};
-type AddOn = {
-  id: number;
-  title: string;
-  description: string;
-  monthly: number;
-  yearly: number;
-};
+      export type Plan = {
+          id: number;
+          name: string;
+          monthly: number;
+          yearly: number;
+          icon: string;
+      };
+      export type AddOn = {
+          id: number;
+          title: string;
+          description: string;
+          monthly: number;
+          yearly: number;
+      };
+
 function App() {
   
 const [step,setStep] = useState<number>(1);
@@ -29,11 +30,11 @@ const [submitted, setSubmitted] = useState(false); /*for step 1 error message St
 const [plan, setPlan] = useState("!Yearly");  /* for Step two Montly and Yearly Step2*/
 
 const [planData, setPlanData] = useState<Plan>({           /*To Set Default value step 2*/
-  id: 1,
-  name: "Arcade",
-  monthly: 9,
-  yearly: 90,
-  icon: arcadeIcon,
+      id: 1,
+      name: "Arcade",
+      monthly: 9,
+      yearly: 90,
+      icon: arcadeIcon,
 });
 
 const [addOnData, setAddOnData] = useState<AddOn[]>([]); /* TO store Data for Step 3*/
